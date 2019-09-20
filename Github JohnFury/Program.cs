@@ -10,6 +10,10 @@ namespace Github_JohnFury
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("My first Git project");
+            Console.WriteLine("Press any key to exit");
+            Console.ReadLine();
+            
         }
     }
 }
