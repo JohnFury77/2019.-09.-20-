@@ -10,15 +10,17 @@ namespace Github_JohnFury
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Kérek 10 számot.");
-            int[] szamok=new int[10];
+            Console.WriteLine("Írja be, hány számot fog beadni!");
+            int[] szamok=new int[int.Parse(Console.ReadLine())];
+            Console.WriteLine("Kérek "+ szamok.Length +" számot.");
+            
             int seged = 0;
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < szamok.Length; i++)
             {
                 Console.WriteLine("Írja be a "+(i+1)+". számot");
                 szamok[i] = int.Parse(Console.ReadLine());
             }
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < szamok.Length; i++)
             {
                 if (seged<szamok[i])
                 {
